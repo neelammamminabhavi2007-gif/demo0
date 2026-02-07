@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment |Elegent Jewellery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    .payment-box {
+      width: 400px;
+      margin: 50px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #b8860b;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #b8860b;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #a37400;
+    }
+  </style>
+</head>
+<body>
+
+<div class="payment-box">
+  <h2>Payment Details</h2>
+
+  <form>
+    <label>Full Name</label>
+    <input type="text" placeholder="Enter your name" required>
+
+    <label>Email</label>
+    <input type="email" placeholder="Enter your email" required>
+
+    <label>Payment Method</label>
+    <select>
+      <option>Credit Card</option>
+      <option>Debit Card</option>
+      <option>UPI</option>
+    </select>
+
+    <label>Amount</label>
+    <input type="text" placeholder="Enter amount" required>
+    <button type="submit">Pay Now</button>
+    <button onclick="alert('payment successfull')"></button>
+    <div class="success-box">
+        <h1> Payment Successful</h1>
+        <p>Thank you for your purchase!<br>
+           Your jewellery order has been placed successfully.</p>
+
+        <a href="index.html">Go to Home</a>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
